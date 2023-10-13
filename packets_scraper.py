@@ -48,5 +48,5 @@ def analyze_packet(pkt):
 # a = sniff(prn=analyze_packet, iface=iFace, filter='tcp')
 
 
-filter_str = f"tcp and host 46.101.191.214 and port 443"
+filter_str = f"tcp and host 140.82.121.4 and port 443"
 a = sniff(prn=analyze_packet, iface=iFace, filter=filter_str)
