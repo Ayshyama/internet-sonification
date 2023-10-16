@@ -21,19 +21,15 @@ Before you begin, ensure you have the following installed:
     git clone https://github.com/your-username/tcp-sonification.git
     ```
 
-2. Install the required Python packages:
-
-    ```bash
-    pip install scapy python-osc
-    ```
+2. Install the requirements.
 
 3. Run the `packets_scraper.py` script and enter values for the following variables:
 
     - `Host_IP`: Set this to the IP address where Max/MSP is running. (127.0.0.1)
     - `iFace`: Choose the network interface to capture TCP packets.
 
-4. Customize the `filter_str` variable based on your specific needs. The provided example filters packets for host `140.82.121.4` on port `443`.
-5. Or just use `a = sniff(prn=analyze_packet, iface=iFace, filter='tcp')`
+4. Customize the `filter_str` variable based on your specific needs. The provided example filters packets for host `140.82.121.4` on port `443`. This will give you all TCP packeges from one resourse (for example web-site hosted on `140.82.121.4`).
+5. Or just use `a = sniff(prn=analyze_packet, iface=iFace, filter='tcp')` to receive all TCP packages which you receive in the moment from all opened resourses.
 
 ## Usage
 
