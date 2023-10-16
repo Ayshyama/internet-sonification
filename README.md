@@ -33,6 +33,7 @@ Before you begin, ensure you have the following installed:
     - `iFace`: Choose the network interface to capture TCP packets.
 
 4. Customize the `filter_str` variable based on your specific needs. The provided example filters packets for host `140.82.121.4` on port `443`.
+5. Or just use `a = sniff(prn=analyze_packet, iface=iFace, filter='tcp')`
 
 ## Usage
 
